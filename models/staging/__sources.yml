@@ -1,0 +1,15 @@
+sources:
+  - name: Hospital
+    schema: raw
+    description: Hopital data
+    tables:
+      - name: src_appointments
+        description: ""
+      - name: src_billing
+        description: ""
+      - name: src_doctors
+        description: ""
+      - name: src_patients
+        description: ""
+      - name: src_treatments
+        description: ""
