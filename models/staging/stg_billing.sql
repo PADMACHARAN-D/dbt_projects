@@ -2,7 +2,6 @@
   config(
     materialized = "view",
     schema = "stage",
-    database = "pc_dbt_db"
   )
 }}
 

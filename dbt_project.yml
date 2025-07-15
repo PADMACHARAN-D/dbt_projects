@@ -38,13 +38,20 @@ clean-targets:         # directories to be removed by `dbt clean`
 models:
   my_new_project:
     marts:
+      database: pc_dbt_db 
       schema: marts  
+      materialized: table
     staging:
+      database: pc_dbt_db 
       schema: stage
-    integration:
-      schema: integration
-    transformation:
-      schema: transformation
-
+      materialized: view
+    # integration:
+    #   database: pc_dbt_db 
+    #   schema: integration
+    #   materialized: table
+    # transformation:
+    #   database: pc_dbt_db 
+    #   schema: transformation
+    #   materialized: table
   
   
