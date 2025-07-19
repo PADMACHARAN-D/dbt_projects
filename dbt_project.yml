@@ -45,13 +45,13 @@ models:
       database: pc_dbt_db 
       schema: stage
       materialized: view
-    # integration:
-    #   database: pc_dbt_db 
-    #   schema: integration
-    #   materialized: table
-    # transformation:
-    #   database: pc_dbt_db 
-    #   schema: transformation
-    #   materialized: table
+    integration:
+      database: pc_dbt_db 
+      schema: integration
+      materialized: table
+    transformation:
+      database: pc_dbt_db 
+      schema: transformation
+      materialized: table
   
   

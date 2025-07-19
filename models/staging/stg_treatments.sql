@@ -6,4 +6,4 @@
   )
 }}
 
-select * from {{source('Hospital','src_treatments')}}
+select *,current_timestamp as last_updated from {{source('Hospital','src_treatments')}}

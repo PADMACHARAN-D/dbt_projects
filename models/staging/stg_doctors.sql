@@ -1,9 +1,9 @@
 {{
   config(
-    materialized = "view",
+    materialized = "table",
     schema = "stage",
     database = "pc_dbt_db"
   )
 }}
 
-select * from {{source('Hospital','src_doctors')}}
+select *,current_timestamp as last_updated_date from {{source('Hospital','src_doctors')}}
