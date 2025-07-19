@@ -1,0 +1,12 @@
+version: 2
+models:
+    - name: dim_doctor
+      columns:
+        - name: doctor_id
+          tests: 
+            - unique
+            - not_null
+        # - name: first_name
+        #   tests:
+        #     - accepted_values:
+        #         values: ['David']

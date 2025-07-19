@@ -1,0 +1,13 @@
+version: 2
+models:
+    - name: fact_billing
+      columns:
+        - name: bill_id
+          tests: 
+            - unique
+            - not_null
+        - name: patient_id
+          tests :
+            - relationships:
+                field: patient_id
+                to: ref('dim_patient')

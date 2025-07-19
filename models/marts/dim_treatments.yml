@@ -1,0 +1,8 @@
+version: 2
+models:
+    - name: dim_treatments
+      columns:
+        - name: treatment_id
+          tests: 
+            - unique
+            - not_null

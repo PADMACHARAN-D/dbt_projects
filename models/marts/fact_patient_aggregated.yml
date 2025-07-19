@@ -1,0 +1,9 @@
+version: 2
+models:
+    - name: fact_patient_aggregated
+      columns:
+        - name: patient_id
+          tests :
+            - relationships:
+                field: patient_id
+                to: ref('dim_patient')

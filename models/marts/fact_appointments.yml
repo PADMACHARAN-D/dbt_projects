@@ -1,0 +1,18 @@
+version: 2
+models:
+    - name: fact_appointments
+      columns:
+        - name: appointment_id
+          tests: 
+            - unique
+            - not_null
+        - name: patient_id
+          tests :
+            - relationships:
+                field: surrogate_key
+                to: ref('dim_patient')
+        - name: doctor_id
+          tests:
+            - relationships:
+                field: doctor_id
+                to: ref('dim_doctor')
