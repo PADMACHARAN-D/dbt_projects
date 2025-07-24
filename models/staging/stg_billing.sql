@@ -2,6 +2,7 @@
   config(
     materialized = "view",
     schema = "stage",
+    tags = 'stage'
   )
 }}
 

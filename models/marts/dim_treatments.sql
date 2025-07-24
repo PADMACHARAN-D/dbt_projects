@@ -1,4 +1,7 @@
 {{ config(
+    tags = 'marts_dim'
+) }}
+{{ config(
     materialized='incremental',
     unique_key='treatment_id',
     incremental = 'merge'

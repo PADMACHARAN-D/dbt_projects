@@ -2,7 +2,8 @@
   config(
     materialized = "table",
     schema = "stage",
-    database = "pc_dbt_db"
+    database = "pc_dbt_db",
+    tags = 'stage'
   )
 }}
 

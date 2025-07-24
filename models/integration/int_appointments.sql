@@ -1,3 +1,8 @@
+{{
+    config(
+        tags = 'integration'
+    )   
+}}
 with patient as (
     select surrogate_key,patient_id from {{ ref('dim_patient') }}
 ),

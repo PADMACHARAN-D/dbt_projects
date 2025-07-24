@@ -1,3 +1,6 @@
+{{ config(
+    tags = "marts_dim"
+) }}
 select  
 {{dbt_utils.generate_surrogate_key(['patient_id']) }} as surrogate_key,
 patient_id,
